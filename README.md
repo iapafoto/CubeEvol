@@ -2,8 +2,8 @@
 
 3D evolving creature using genetic algorithm
 
-OpenGL with GLSL
-OpenMP
+- "modern" OpenGL
+- OpenMP
 
 # Credits
 
