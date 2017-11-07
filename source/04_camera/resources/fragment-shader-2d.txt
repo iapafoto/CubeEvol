@@ -1,0 +1,10 @@
+#version 150
+
+in vec2 fragTexCoord;
+
+out vec4 finalColor;
+
+void main() {
+//set every drawn pixel to white
+	finalColor = vec4(fragTexCoord, 1.0, .5);
+}

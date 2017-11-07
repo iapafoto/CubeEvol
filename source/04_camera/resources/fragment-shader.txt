@@ -1,0 +1,33 @@
+#version 150
+
+//uniform sampler2D tex;
+
+in vec2 fragTexCoord;
+in vec3 fragColor;
+
+out vec4 finalColor;
+
+
+void main() {
+    //note: the texture function was called texture2D in older versions of GLSL
+	if (length(fragColor)>.1) {
+		float c = 1.-smoothstep(.48,.52, abs(fragTexCoord.x-.5));
+		c *= 1.-smoothstep(.48,.52, abs(fragTexCoord.y-.5));
+		finalColor = vec4(fragColor*(c*c*c),1.);
+	} else {
+		float r = length(fragTexCoord);
+
+		float k = smoothstep(.0,.002, abs(mod(r,.1)-.05));
+	//	k *= smoothstep(.0,.002, abs(mod(r,1.)-.05));
+		
+		vec2 V = floor(20.*fragTexCoord.xy);
+		k *= (.75+.25*mod(V.x+V.y,2.));
+
+		float k2 = step(.1, abs(mod(r+.05,1.)));
+
+		vec2 e = smoothstep(0.,.02,abs(mod(.5+20.*fragTexCoord.xy,1.)-.5));
+		k *= (.5+.5*e.x*e.y);
+
+		finalColor = vec4((.5+.5*k2)*k*vec3(1,1,1),1.);
+	}
+}
