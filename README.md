@@ -7,7 +7,7 @@
 
 # Credits
 
-Mecanic part is based on [Voxelyze](https://github.com/jonhiller/Voxelyze) project from jon hiller
+Mecanic part is based on [Voxelyze](https://github.com/jonhiller/Voxelyze) project from Jon Hiller
 
 # License
 
