@@ -1,7 +1,7 @@
 # About
 
 3D evolving creature using genetic algorithm
-
+[Video](https://www.youtube.com/watch?v=Ss2FSmt0GRI)
 - "modern" OpenGL
 - OpenMP
 
