@@ -4,7 +4,6 @@
 
 # Image
 
-![Image1](https://raw.githubusercontent.com/iapafoto/CubeEvol/master/img/creature1.png)
 [![Image2](https://raw.githubusercontent.com/iapafoto/CubeEvol/master/img/creature.png)](https://www.youtube.com/watch?v=Ss2FSmt0GRI)
 
 - "modern" OpenGL
