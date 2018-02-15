@@ -2,7 +2,7 @@
 
 3D evolving creature using genetic algorithm
 
-# Image
+# Video
 
 [![Image2](https://raw.githubusercontent.com/iapafoto/CubeEvol/master/img/creature.png)](https://www.youtube.com/watch?v=Ss2FSmt0GRI)
 
